@@ -16,7 +16,7 @@ public class count_listener implements ServletContextListener  {
         
         ServletContext sc = sce.getServletContext();
         String count = sc.getInitParameter("count_dd");
-        hit_count c = new hit_count(Integer.parseInt(count));
+        hitCounter c = new hitCounter(Integer.parseInt(count));
         sc.setAttribute("count_dd",c);
         
     }
